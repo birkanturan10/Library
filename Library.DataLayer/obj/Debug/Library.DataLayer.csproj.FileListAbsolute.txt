@@ -1,0 +1,6 @@
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.DataLayer\bin\Debug\Library.DataLayer.dll
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.DataLayer\bin\Debug\Library.DataLayer.pdb
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.DataLayer\obj\Debug\Library.DataLayer.csproj.AssemblyReference.cache
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.DataLayer\obj\Debug\Library.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.DataLayer\obj\Debug\Library.DataLayer.dll
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.DataLayer\obj\Debug\Library.DataLayer.pdb

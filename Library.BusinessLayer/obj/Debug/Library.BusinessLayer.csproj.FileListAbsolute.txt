@@ -1,0 +1,6 @@
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.BusinessLayer\bin\Debug\Library.BusinessLayer.dll
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.BusinessLayer\bin\Debug\Library.BusinessLayer.pdb
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.BusinessLayer\obj\Debug\Library.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.BusinessLayer\obj\Debug\Library.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.BusinessLayer\obj\Debug\Library.BusinessLayer.dll
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.BusinessLayer\obj\Debug\Library.BusinessLayer.pdb

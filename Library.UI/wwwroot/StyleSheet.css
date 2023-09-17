@@ -1,0 +1,10 @@
+﻿* {
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background: url('pictures/pexels-joão-jesus-925743.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+

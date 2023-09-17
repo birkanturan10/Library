@@ -1,0 +1,6 @@
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.TypeLayer\bin\Debug\Library.TypeLayer.dll
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.TypeLayer\bin\Debug\Library.TypeLayer.pdb
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.TypeLayer\obj\Debug\Library.TypeLayer.csproj.AssemblyReference.cache
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.TypeLayer\obj\Debug\Library.TypeLayer.csproj.CoreCompileInputs.cache
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.TypeLayer\obj\Debug\Library.TypeLayer.dll
+C:\Users\birka\Desktop\İ - Akademi Kurs\Projelerim\Library\Library.TypeLayer\obj\Debug\Library.TypeLayer.pdb
