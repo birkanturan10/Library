@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mOhf1JSMhL+120ceYBt4xmsk0m0Xrjfk/i5c/2VEyzmQsWRtFHL4aGPBHHWGmDu6w3ckIhS0Eqs4tp2q2m0qAQ==",
+  "dgSpecHash": "bczVh3DgefMJzdzLoOkK8jQRHdrs8euIViIw/fEboKd0y+cd2mt5MKa4ogTnI7A9Nv7MH2C1S/OxjKYAJbIJ5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs\\Projelerim\\Library\\Library.UI\\Library.UI.csproj",
+  "projectFilePath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.UI\\Library.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\birka\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\birka\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

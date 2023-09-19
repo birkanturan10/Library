@@ -1,9 +1,36 @@
-﻿
+﻿@model IEnumerable<Library.TypeLayer.BookList>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/HomeLayout.cshtml";
 }
 
-
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">@Html.DisplayNameFor(model=>model.BookID)</th>
+                <th scope="col">@Html.DisplayNameFor(model=>model.BookName)</th>
+                <th scope="col">@Html.DisplayNameFor(model=>model.Author)</th>
+                <th scope="col">@Html.DisplayNameFor(model=>model.NumberOfPages)</th>
+                <th scope="col">@Html.DisplayNameFor(model=>model.PublicationDate)</th>
+                <th scope="col">@Html.DisplayNameFor(model=>model.Publisher)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@Html.DisplayFor(ModelItem=>item.BookID)</th>
+                    <td>@Html.DisplayFor(ModelItem=>item.BookName)</td>
+                    <td>@Html.DisplayFor(ModelItem=>item.Author)</td>
+                    <td>@Html.DisplayFor(ModelItem=>item.NumberOfPages)</td>
+                    <td>@Html.DisplayFor(ModelItem=>item.PublicationDate)</td>
+                    <td>@Html.DisplayFor(ModelItem=>item.Publisher)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
 

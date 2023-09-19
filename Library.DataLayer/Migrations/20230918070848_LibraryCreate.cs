@@ -16,7 +16,7 @@ namespace Library.DataLayer.Migrations
             BookName = table.Column<string>(nullable: true),
             Author = table.Column<string>(nullable: true),
             NumberOfPages = table.Column<int>(nullable: false),
-            PublicationDate = table.Column<DateTime>(nullable: false),
+            PublicationDate = table.Column<int>(nullable: false),
             Publisher = table.Column<string>(nullable: true)
         },
         constraints: table =>

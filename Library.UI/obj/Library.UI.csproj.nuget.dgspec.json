@@ -1,17 +1,51 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs\\Projelerim\\Library\\Library.UI\\Library.UI.csproj": {}
+    "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.UI\\Library.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs\\Projelerim\\Library\\Library.UI\\Library.UI.csproj": {
+    "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.DataLayer\\Library.DataLayer.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.DataLayer\\Library.DataLayer.csproj",
+        "projectName": "Library.DataLayer",
+        "projectPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.DataLayer\\Library.DataLayer.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.TypeLayer\\Library.TypeLayer.csproj": {
+                "projectPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.TypeLayer\\Library.TypeLayer.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.TypeLayer\\Library.TypeLayer.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.TypeLayer\\Library.TypeLayer.csproj",
+        "projectName": "Library.TypeLayer",
+        "projectPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.TypeLayer\\Library.TypeLayer.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.UI\\Library.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs\\Projelerim\\Library\\Library.UI\\Library.UI.csproj",
+        "projectUniqueName": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.UI\\Library.UI.csproj",
         "projectName": "Library.UI",
-        "projectPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs\\Projelerim\\Library\\Library.UI\\Library.UI.csproj",
+        "projectPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.UI\\Library.UI.csproj",
         "packagesPath": "C:\\Users\\birka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs\\Projelerim\\Library\\Library.UI\\obj\\",
+        "outputPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,7 +66,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.DataLayer\\Library.DataLayer.csproj": {
+                "projectPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.DataLayer\\Library.DataLayer.csproj"
+              },
+              "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.TypeLayer\\Library.TypeLayer.csproj": {
+                "projectPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.TypeLayer\\Library.TypeLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -25,7 +25,7 @@ namespace Library.TypeLayer
         public int NumberOfPages { get; set; }
 
         [DisplayName("Basım Tarihi")]
-        public DateTime PublicationDate { get; set; }
+        public int PublicationDate { get; set; }
 
         [DisplayName("Yayınevi")]
         public string Publisher { get; set; }

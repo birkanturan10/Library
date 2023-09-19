@@ -164,6 +164,10 @@
     <Compile Include="Migrations\20230918070848_LibraryCreate.designer.cs">
       <DependentUpon>20230918070848_LibraryCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20230919083651_LibraryCreate2.cs" />
+    <Compile Include="Migrations\20230919083651_LibraryCreate2.designer.cs">
+      <DependentUpon>20230919083651_LibraryCreate2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -171,7 +175,12 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Library.TypeLayer\Library.TypeLayer.csproj">
+      <Project>{e093018e-bfd8-4023-81e2-7a15890e034d}</Project>
+      <Name>Library.TypeLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
