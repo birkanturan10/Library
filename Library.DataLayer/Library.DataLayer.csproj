@@ -160,13 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context.cs" />
-    <Compile Include="Migrations\20230918070848_LibraryCreate.cs" />
-    <Compile Include="Migrations\20230918070848_LibraryCreate.designer.cs">
-      <DependentUpon>20230918070848_LibraryCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20230919083651_LibraryCreate2.cs" />
-    <Compile Include="Migrations\20230919083651_LibraryCreate2.designer.cs">
-      <DependentUpon>20230919083651_LibraryCreate2.cs</DependentUpon>
+    <Compile Include="Migrations\20230920122659_LibraryCreate.cs" />
+    <Compile Include="Migrations\20230920122659_LibraryCreate.designer.cs">
+      <DependentUpon>20230920122659_LibraryCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

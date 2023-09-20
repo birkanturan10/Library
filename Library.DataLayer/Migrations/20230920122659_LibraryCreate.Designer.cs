@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Library.DataLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230919083651_LibraryCreate2")]
-    partial class LibraryCreate2
+    [Migration("20230920122659_LibraryCreate")]
+    partial class LibraryCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

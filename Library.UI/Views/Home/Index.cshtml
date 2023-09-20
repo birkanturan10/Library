@@ -5,7 +5,12 @@
     Layout = "~/Views/Shared/HomeLayout.cshtml";
 }
 
-<div class="container">
+<!--Search Box-->
+<div class="d-flex justify-content-center" style="margin:10px;font-size:22px;">
+    Arama Kutucuğu:&nbsp;<input type="text" id="myinput" />
+</div>
+<div style="padding:30px;">
+<div class="my-container">
     <table class="table">
         <thead>
             <tr>
@@ -17,7 +22,7 @@
                 <th scope="col">@Html.DisplayNameFor(model=>model.Publisher)</th>
             </tr>
         </thead>
-        <tbody>
+            <tbody id="myTable">
             @foreach (var item in Model)
             {
                 <tr>
@@ -32,5 +37,17 @@
         </tbody>
     </table>
 </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#myinput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            })
+        })
+    })
+</script>
 
 
