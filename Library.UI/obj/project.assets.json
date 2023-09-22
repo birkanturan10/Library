@@ -4087,6 +4087,15 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Library.BusinessLayer/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Library.BusinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.BusinessLayer.dll": {}
+        }
+      },
       "Library.DataLayer/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -11775,6 +11784,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Library.BusinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../Library.BusinessLayer/Library.BusinessLayer.csproj",
+      "msbuildProject": "../Library.BusinessLayer/Library.BusinessLayer.csproj"
+    },
     "Library.DataLayer/1.0.0": {
       "type": "project",
       "path": "../Library.DataLayer/Library.DataLayer.csproj",
@@ -11788,6 +11802,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Library.BusinessLayer >= 1.0.0",
       "Library.DataLayer >= 1.0.0",
       "Library.TypeLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.32",
@@ -11829,6 +11844,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.BusinessLayer\\Library.BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.BusinessLayer\\Library.BusinessLayer.csproj"
+            },
             "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.DataLayer\\Library.DataLayer.csproj": {
               "projectPath": "C:\\Users\\birka\\Desktop\\İ - Akademi Kurs ve Yazılım Projeleri\\Projelerim\\Library\\Library.DataLayer\\Library.DataLayer.csproj"
             },

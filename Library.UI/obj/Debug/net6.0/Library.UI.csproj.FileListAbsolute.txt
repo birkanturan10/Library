@@ -498,3 +498,6 @@ C:\Users\birka\Desktop\İ - Akademi Kurs ve Yazılım Projeleri\Projelerim\Libra
 C:\Users\birka\Desktop\İ - Akademi Kurs ve Yazılım Projeleri\Projelerim\Library\Library.UI\obj\Debug\net6.0\Library.UI.pdb
 C:\Users\birka\Desktop\İ - Akademi Kurs ve Yazılım Projeleri\Projelerim\Library\Library.UI\obj\Debug\net6.0\Library.UI.genruntimeconfig.cache
 C:\Users\birka\Desktop\İ - Akademi Kurs ve Yazılım Projeleri\Projelerim\Library\Library.UI\obj\Debug\net6.0\ref\Library.UI.dll
+C:\Users\birka\Desktop\İ - Akademi Kurs ve Yazılım Projeleri\Projelerim\Library\Library.UI\bin\Debug\net6.0\Library.BusinessLayer.dll
+C:\Users\birka\Desktop\İ - Akademi Kurs ve Yazılım Projeleri\Projelerim\Library\Library.UI\bin\Debug\net6.0\Library.BusinessLayer.pdb
+C:\Users\birka\Desktop\İ - Akademi Kurs ve Yazılım Projeleri\Projelerim\Library\Library.UI\bin\Debug\net6.0\Library.BusinessLayer.dll.config

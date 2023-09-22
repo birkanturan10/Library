@@ -1,53 +1,102 @@
 ﻿@model IEnumerable<Library.TypeLayer.BookList>
 
 @{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/HomeLayout.cshtml";
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/HomeLayout.cshtml";
 }
+
+<div style="justify-content:left;margin:10px;">
+	<a asp-action="AddBook" class="btn btn-secondary">Kitap Ekle</a>
+</div>
 
 <!--Search Box-->
 <div class="d-flex justify-content-center" style="margin:10px;font-size:22px;">
-    Arama Kutucuğu:&nbsp;<input type="text" id="myinput" />
+	Arama Kutucuğu:&nbsp;<input type="text" id="myinput" />
 </div>
 <div style="padding:30px;">
-<div class="my-container">
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">@Html.DisplayNameFor(model=>model.BookID)</th>
-                <th scope="col">@Html.DisplayNameFor(model=>model.BookName)</th>
-                <th scope="col">@Html.DisplayNameFor(model=>model.Author)</th>
-                <th scope="col">@Html.DisplayNameFor(model=>model.NumberOfPages)</th>
-                <th scope="col">@Html.DisplayNameFor(model=>model.PublicationDate)</th>
-                <th scope="col">@Html.DisplayNameFor(model=>model.Publisher)</th>
-            </tr>
-        </thead>
-            <tbody id="myTable">
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <th scope="row">@Html.DisplayFor(ModelItem=>item.BookID)</th>
-                    <td>@Html.DisplayFor(ModelItem=>item.BookName)</td>
-                    <td>@Html.DisplayFor(ModelItem=>item.Author)</td>
-                    <td>@Html.DisplayFor(ModelItem=>item.NumberOfPages)</td>
-                    <td>@Html.DisplayFor(ModelItem=>item.PublicationDate)</td>
-                    <td>@Html.DisplayFor(ModelItem=>item.Publisher)</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+	<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">@Html.DisplayNameFor(model=>model.BookID)</th>
+					<th scope="col">@Html.DisplayNameFor(model=>model.BookName)</th>
+					<th scope="col">@Html.DisplayNameFor(model=>model.Author)</th>
+					<th scope="col">@Html.DisplayNameFor(model=>model.NumberOfPages)</th>
+					<th scope="col">@Html.DisplayNameFor(model=>model.PublicationDate)</th>
+					<th scope="col">@Html.DisplayNameFor(model=>model.Publisher)</th>
+				</tr>
+			</thead>
+			<tbody id="myTable">
+				@foreach (var item in Model)
+				{
+					<tr>
+						<th scope="row">@Html.DisplayFor(ModelItem=>item.BookID)</th>
+						<td class="kitapismi">@Html.DisplayFor(ModelItem=>item.BookName)</td>
+						<td class="yazarismi">@Html.DisplayFor(ModelItem=>item.Author)</td>
+						<td>@Html.DisplayFor(ModelItem=>item.NumberOfPages)</td>
+						<td>@Html.DisplayFor(ModelItem=>item.PublicationDate)</td>
+						<td class="yayinevi">@Html.DisplayFor(ModelItem=>item.Publisher)</td>
+					</tr>
+				}
+				<tr style="display:none;" id="a">
+					<td>
+						Aradığınız kriterlere uygun bir eşleşme bulunamadı.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 
+
+
+@*<script>
+	$(document).ready(function () {
+		$("#myinput").on("keyup", function () {
+			var value = $(this).val().toLowerCase();
+			$("#myTable tr").filter(function () {
+				var bookName = $(this).find(".kitapismi").text().toLowerCase();
+				var authorName = $(this).find(".yazarismi").text().toLowerCase();
+				var publisher = $(this).find(".yayinevi").text().toLowerCase();
+				
+				$(this).toggle(bookName.indexOf(value) > -1);
+				$(this).toggle(authorName.indexOf(value) > -1);
+				$(this).toggle(publisher.indexOf(value) > -1);
+			});
+		});
+	});
+</script>*@
+
 <script>
-    $(document).ready(function () {
-        $("#myinput").on("keyup", function () {
-            var value = $(this).val().toLowerCase();
-            $("#myTable tr").filter(function () {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            })
-        })
-    })
+	$(document).ready(function () {
+		$("#myinput").on("keyup", function () {
+			var value = $(this).val().toLowerCase();
+			var noMatches = true; // Varsayılan olarak eşleşme olmadığını belirle
+
+			$("#myTable tr").each(function () {
+				var bookName = $(this).find(".kitapismi").text().toLowerCase();
+				var authorName = $(this).find(".yazarismi").text().toLowerCase();
+				var publisher = $(this).find(".yayinevi").text().toLowerCase();
+
+				if (bookName.indexOf(value) > -1 || authorName.indexOf(value) > -1 || publisher.indexOf(value) > -1) {
+					$(this).show(); // Eşleşme varsa satırı görünür yap
+					noMatches = false; // Eşleşme olduğunu belirle
+				} 
+				else {
+					$(this).hide(); // Eşleşme yoksa satırı gizle
+				}
+			});
+
+			// Eşleşme yoksa "a" id'li satırı görünür yap
+			if (noMatches) {
+				$("#a").show();
+			} else {
+				$("#a").hide();
+			}
+		});
+	});
 </script>
+
+
 
 
