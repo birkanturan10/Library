@@ -1,0 +1,46 @@
+﻿@model Library.TypeLayer.BookList
+
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/HomeLayout.cshtml";
+}
+
+<div style="padding:30px;">
+	<div class="container" style="padding:30px;width:300px;">
+		<form asp-action="Update">
+			<div class="input-group input-group-sm mb-3">
+				<span class="input-group-text" id="inputGroup-sizing-sm">Kitap Adı:</span>
+				<input asp-for="BookName" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+			</div>
+
+			<div class="input-group input-group-sm mb-3">
+				<span class="input-group-text" id="inputGroup-sizing-sm">Yazar:</span>
+				<input asp-for="Author" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+			</div>
+
+			<div class="input-group input-group-sm mb-3">
+				<span class="input-group-text" id="inputGroup-sizing-sm">Sayfa Sayısı:</span>
+				<input asp-for="NumberOfPages" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+			</div>
+
+			<div class="input-group input-group-sm mb-3">
+				<span class="input-group-text" id="inputGroup-sizing-sm">Basım Tarihi:</span>
+				<input asp-for="PublicationDate" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+			</div>
+
+			<div class="input-group input-group-sm mb-3">
+				<span class="input-group-text" id="inputGroup-sizing-sm">Yayınevi:</span>
+				<input asp-for="Publisher" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+			</div>
+
+			<div>
+				<input asp-action="Update" type="submit" value="Güncelle" class="btn btn-secondary" />
+			</div>
+
+			<div>
+				<input asp-for="BookID" class="form-control" type="hidden" />
+			</div>
+		</form>
+	</div>
+</div>
+

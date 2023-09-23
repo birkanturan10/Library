@@ -24,6 +24,8 @@
 					<th scope="col">@Html.DisplayNameFor(model=>model.NumberOfPages)</th>
 					<th scope="col">@Html.DisplayNameFor(model=>model.PublicationDate)</th>
 					<th scope="col">@Html.DisplayNameFor(model=>model.Publisher)</th>
+					<th></th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody id="myTable">
@@ -36,6 +38,8 @@
 						<td>@Html.DisplayFor(ModelItem=>item.NumberOfPages)</td>
 						<td>@Html.DisplayFor(ModelItem=>item.PublicationDate)</td>
 						<td class="yayinevi">@Html.DisplayFor(ModelItem=>item.Publisher)</td>
+						<td><a asp-action="Update" asp-route-id="@item.BookID" class="btn btn-sm btn-secondary">Güncelle</a></td>
+						<th><a asp-action="Delete" asp-route-id="@item.BookID" class="btn btn-sm btn-secondary">Sil</a></th>
 					</tr>
 				}
 				<tr style="display:none;" id="a">
@@ -47,25 +51,6 @@
 		</table>
 	</div>
 </div>
-
-
-
-@*<script>
-	$(document).ready(function () {
-		$("#myinput").on("keyup", function () {
-			var value = $(this).val().toLowerCase();
-			$("#myTable tr").filter(function () {
-				var bookName = $(this).find(".kitapismi").text().toLowerCase();
-				var authorName = $(this).find(".yazarismi").text().toLowerCase();
-				var publisher = $(this).find(".yayinevi").text().toLowerCase();
-				
-				$(this).toggle(bookName.indexOf(value) > -1);
-				$(this).toggle(authorName.indexOf(value) > -1);
-				$(this).toggle(publisher.indexOf(value) > -1);
-			});
-		});
-	});
-</script>*@
 
 <script>
 	$(document).ready(function () {

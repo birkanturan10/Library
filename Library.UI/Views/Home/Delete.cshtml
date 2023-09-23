@@ -1,0 +1,42 @@
+﻿@model Library.TypeLayer.BookList
+
+@{
+	ViewData["Title"] = "Delete";
+	Layout = "~/Views/Shared/HomeLayout.cshtml";
+}
+
+<div style="padding:30px;">
+	<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">@Html.DisplayNameFor(model=>model.BookID)</th>
+					<th scope="col">@Html.DisplayNameFor(model=>model.BookName)</th>
+					<th scope="col">@Html.DisplayNameFor(model=>model.Author)</th>
+					<th scope="col">@Html.DisplayNameFor(model=>model.NumberOfPages)</th>
+					<th scope="col">@Html.DisplayNameFor(model=>model.PublicationDate)</th>
+					<th scope="col">@Html.DisplayNameFor(model=>model.Publisher)</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">@Html.DisplayFor(model=>model.BookID)</th>
+					<td>@Html.DisplayFor(model=>model.BookName)</td>
+					<td>@Html.DisplayFor(model=>model.Author)</td>
+					<td>@Html.DisplayFor(model=>model.NumberOfPages)</td>
+					<td>@Html.DisplayFor(model=>model.PublicationDate)</td>
+					<td>@Html.DisplayFor(model=>model.Publisher)</td>
+					<td>
+						<form asp-action="Delete">
+							<input type="hidden" asp-for="BookID" />
+							<input type="submit" value="Sil" class="btn btn-secondary" onclick="return confirm('Silmek istediğinizden emin misiniz?')" />
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+</div>
+
