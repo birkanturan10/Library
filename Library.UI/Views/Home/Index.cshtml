@@ -5,14 +5,23 @@
 	Layout = "~/Views/Shared/HomeLayout.cshtml";
 }
 
+<!--Add Book-->
 <div style="justify-content:left;margin:10px;">
 	<a asp-action="AddBook" class="btn btn-secondary">Kitap Ekle</a>
+</div>
+
+<!--Delete All Books-->
+<div style="margin-left:135px;margin-top:-48px;">
+	<form method="post" asp-action="DeleteAllBooks">
+		<input type="submit" value="Tümünü Sil" class="btn btn-secondary" onclick="return confirm('Silmek istediğinizden emin misiniz?')" />
+	</form>
 </div>
 
 <!--Search Box-->
 <div class="d-flex justify-content-center" style="margin:10px;font-size:22px;">
 	Arama Kutucuğu:&nbsp;<input type="text" id="myinput" />
 </div>
+
 <div style="padding:30px;">
 	<div class="container">
 		<table class="table">
@@ -66,7 +75,7 @@
 				if (bookName.indexOf(value) > -1 || authorName.indexOf(value) > -1 || publisher.indexOf(value) > -1) {
 					$(this).show(); // Eşleşme varsa satırı görünür yap
 					noMatches = false; // Eşleşme olduğunu belirle
-				} 
+				}
 				else {
 					$(this).hide(); // Eşleşme yoksa satırı gizle
 				}

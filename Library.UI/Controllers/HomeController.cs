@@ -120,5 +120,20 @@ namespace Library.UI.Controllers
 
 			return RedirectToAction(nameof(Index));
 		}
+
+		public IActionResult DeleteAllBooks()
+		{
+			var allBooks = context.BookLists.ToList();
+
+			foreach (var book in allBooks)
+			{
+				context.BookLists.Remove(book);
+			}
+
+			context.SaveChanges();
+
+			return RedirectToAction("Index");
+		}
+
 	}
 }
