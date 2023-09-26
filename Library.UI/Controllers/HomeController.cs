@@ -135,5 +135,14 @@ namespace Library.UI.Controllers
 			return RedirectToAction("Index");
 		}
 
+		public IActionResult Authors()
+		{
+			return View(context.BookLists);
+		}
+
+		public IActionResult Publishers()
+		{
+			return View(context.BookLists);
+		}
 	}
 }

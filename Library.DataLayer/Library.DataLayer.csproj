@@ -164,6 +164,14 @@
     <Compile Include="Migrations\20230920122659_LibraryCreate.designer.cs">
       <DependentUpon>20230920122659_LibraryCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20230925082404_LibraryCreate2.cs" />
+    <Compile Include="Migrations\20230925082404_LibraryCreate2.designer.cs">
+      <DependentUpon>20230925082404_LibraryCreate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230926112635_LibraryCreate3.cs" />
+    <Compile Include="Migrations\20230926112635_LibraryCreate3.designer.cs">
+      <DependentUpon>20230926112635_LibraryCreate3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

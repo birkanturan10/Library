@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Library.TypeLayer.BookList>
+
+@{
+    ViewData["Title"] = "Authors";
+    Layout = "~/Views/Shared/HomeLayout.cshtml";
+}
+
+<div style="padding:30px;">
+	<div class="container" style="width:300px;">
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">@Html.DisplayNameFor(model=>model.Author)</th>
+					<th>Kaç Kitabı Var?</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var author in Model.GroupBy(a=>a.Author))
+				{
+					<tr>
+						<td>@Html.DisplayFor(ModelItem=>author.Key)</td>
+						<td>@author.Count()</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
